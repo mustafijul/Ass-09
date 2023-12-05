@@ -9,13 +9,13 @@ import {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <div className=' px-4 py-5 mx-auto w-full md:px-24 lg:px-8 bg-violet-100 sticky top-0'>
+    <div className=' px-4 py-5 mx-auto w-full md:px-24 lg:px-8 bg-violet-100 '>
       <div className='relative flex items-center justify-between'>
         {/* Logo Section */}
         <Link to='/' className='inline-flex items-center'>
           
           <span className='lg:ml-20 ml-7 text-xl font-bold tracking-wide text-gray-800 hover:text-violet-800'>
-            chakuriBazar
+           jobHunter
           </span>
         </Link>
 
@@ -23,7 +23,7 @@ const Header = () => {
         <ul className='items-center hidden space-x-10 lg:flex text-violet-500 '>
           <li className='hover:text-violet-800'>
             <NavLink
-              to='/'
+              to='/Statistics'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Statistics
@@ -31,7 +31,7 @@ const Header = () => {
           </li>
           <li className='hover:text-violet-800'>
             <NavLink
-              to='/books'
+              to='/appliedjobs'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Applied jobs
@@ -39,13 +39,13 @@ const Header = () => {
           </li>
           <li className='hover:text-violet-800'>
             <NavLink
-              to='/about'
+              to='/Blogs'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Blogs
             </NavLink>
           </li>
-          <button className='text-white bg-violet-500 hover:bg-violet-800 p-3 rounded' >start applying</button>
+          <button className='text-white bg-violet-500 hover:bg-violet-800 p-3 rounded hover:translate-x-3 duration-150' >start applying</button>
         </ul>
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>
@@ -66,7 +66,7 @@ const Header = () => {
                     <Link to='/' className='inline-flex items-center'>
                       <BoltIcon className='h-6 w-6 text-blue-500' />
                       <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
-                        nextPage
+                        jobHunter
                       </span>
                     </Link>
                   </div>
@@ -85,24 +85,24 @@ const Header = () => {
                 <nav>
                   <ul className='space-y-4'>
                     <li>
-                      <Link to='/' className='default'>
-                        Home
+                      <Link to='/Statistics' className='default'>
+                        Statistics
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to='/books'
+                        to='/ Applied jobs'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                       >
-                        Books
+                        Applied jobs
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to='/about'
+                        to='/Blogs'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                       >
-                        About Us
+                        Blogs
                       </Link>
                     </li>
                   </ul>
