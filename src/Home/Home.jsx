@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link, useLoaderData } from "react-router-dom";
 import Job from "../Job";
+import Statistics from "../Statistics";
 const Home = () => {
   // Aos effect
   useEffect(() => {
@@ -85,7 +86,12 @@ const Home = () => {
       <div className="grid lg:grid-cols-2 sm:grid-cols-2">
         {jobs.map((job) => (
           <Job key={job.id} job={job}></Job>
+          
         ))}
+        {/* {jobs.map((job) => (
+          <Statistics job={job}></Statistics>
+          
+        ))} */}
       </div>
     </div>
   );

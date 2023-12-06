@@ -23,7 +23,7 @@ const Header = () => {
         <ul className='items-center hidden space-x-10 lg:flex text-violet-500 '>
           <li className='hover:text-violet-800'>
             <NavLink
-              to='/Statistics'
+              to='/job/id'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Statistics
