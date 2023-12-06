@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
 
   const [jobs, setJobs] = useState([]);
-//  job data 
+  //  job data
   useEffect(() => {
     fetch("/src/data/jobs.json")
       .then((res) => res.json())
@@ -19,7 +19,6 @@ const Home = () => {
   }, []);
 
   // data recieving
-
   const categories = useLoaderData();
   console.log(categories);
 
@@ -86,7 +85,6 @@ const Home = () => {
       <div className="grid lg:grid-cols-2 sm:grid-cols-2">
         {jobs.map((job) => (
           <Job key={job.id} job={job}></Job>
-          
         ))}
         {/* {jobs.map((job) => (
           <Statistics job={job}></Statistics>

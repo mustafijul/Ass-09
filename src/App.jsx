@@ -7,7 +7,6 @@ const App = () => {
     <div>
       <Header></Header>
       <Outlet></Outlet>
-      
     </div>
   );
 };
